@@ -1,0 +1,44 @@
+[0m11:40:31.731252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE5218CAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE5664D110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE566EF810>]}
+
+
+============================== 11:40:31.741081 | 0d164f3f-03e9-4c18-88da-cad1c93dee1f ==============================
+[0m11:40:31.741081 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:40:31.741081 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\shari\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init transit_dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:40:32.020021 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\shari\.dbt
+[0m11:40:32.040258 [debug] [MainThread]: Starter project path: C:\Users\shari\transit-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m11:40:32.083260 [info ] [MainThread]: 
+Your new dbt project "transit_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:40:32.085382 [info ] [MainThread]: Setting up your profile.
+[0m11:42:00.876355 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:42:00.876355 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:42:00.876355 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:45:40.707803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172681652D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172680EF710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172680EF810>]}
+
+
+============================== 11:45:40.725247 | 0a244fe1-6e06-418b-b53b-b7646b3c7767 ==============================
+[0m11:45:40.725247 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:45:40.725247 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\shari\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init transit_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:45:40.757266 [info ] [MainThread]: A project called transit_dbt already exists here.
+[0m11:45:40.759311 [debug] [MainThread]: Command `dbt init` succeeded at 11:45:40.759311 after 0.18 seconds
+[0m11:45:40.759311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017266DD1750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017268105350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017268133110>]}
+[0m11:45:40.761423 [debug] [MainThread]: Flushing usage events
+[0m11:45:41.846943 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:51:28.894814 [info ] [MainThread]: Profile transit_dbt written to C:\Users\shari\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:51:28.898838 [debug] [MainThread]: Command `dbt init` succeeded at 11:51:28.898838 after 657.44 seconds
+[0m11:51:28.900849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE567053D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE5675BA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE50533A50>]}
+[0m11:51:28.900849 [debug] [MainThread]: Flushing usage events
+[0m11:51:29.598637 [debug] [MainThread]: An error was encountered while trying to flush usage events

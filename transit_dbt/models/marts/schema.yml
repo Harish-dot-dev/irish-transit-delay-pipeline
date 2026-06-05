@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: mart_delay_by_route
+    description: "Delay aggregations per route — used for route ranking chart"
+    columns:
+      - name: route_id
+        description: "Route identifier"
+        tests:
+          - not_null
+          - unique
+
+  - name: mart_delay_by_hour
+    description: "Delay aggregations per hour of day — used for time heatmap"
+    columns:
+      - name: hour_of_day
+        description: "Hour 0-23"
+        tests:
+          - not_null
+          - unique
+
+  - name: mart_delay_summary
+    description: "Single row KPI summary for dashboard header cards"
+
+  - name: mart_worst_stops
+    description: "Top 100 stops by average delay"
+    columns:
+      - name: stop_id
+        description: "Stop identifier"
+        tests:
+          - not_null

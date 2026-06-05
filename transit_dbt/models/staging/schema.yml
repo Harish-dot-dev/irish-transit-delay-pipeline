@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_transit_cleaned
+    description: "Cleaned and typed Silver layer data, filtered for nulls"
+    columns:
+      - name: trip_id
+        description: "Unique trip identifier"
+        tests:
+          - not_null
+
+      - name: route_id
+        description: "Route identifier"
+        tests:
+          - not_null
+
+      - name: stop_id
+        description: "Stop identifier"
+        tests:
+          - not_null
+
+      - name: delay_category
+        description: "Categorised delay bucket"
+        tests:
+          - not_null
+          - accepted_values:
+              config:
+                severity: warn
+              arguments:
+                values: ['on_time', 'minor', 'moderate', 'severe']
